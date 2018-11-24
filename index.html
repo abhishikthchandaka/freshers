@@ -12,8 +12,17 @@
 
   <body>
 
-    <div class="container-fluid d-flex align-items-center h-100">
+    <div id="loader" class="container">
       <div class="row justify-content-center">
+        <div class="jumbotron bg-transparent mt-5 text-center col-12">
+          <h1 class="display-4">#b5freshers</h1>
+        </div>
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center h-100">
+      <div id="wrapper" style="display:none;" class="row justify-content-center">
             <div class="col-lg-6 my-5">
               <img src="images/freshers-8bit.png" class="img-fluid d-lg-none">
               <img src="images/freshers-lg.png" class="img-fluid d-none d-lg-block d-xl-none">
@@ -29,6 +38,13 @@
 
   <script src="assets/jquery-3.3.1.min.js"></script>
   <script src="assets/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $("#loader").hide();
+      $("#wrapper").show();
+  });
+  </script>
+
 
 </html>
 
