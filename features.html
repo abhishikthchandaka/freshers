@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/local.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
+    <title>#b5freshers</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-sm-12 mt-5 text-center">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top my-3 d-lg-none" src="images/venue-8bit.png" alt="Cool 'Venue' Image !">
+              <img class="card-img-top my-3 d-none d-lg-block" src="images/venue.png" alt="Cool 'Venue' Image !">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalVenue">Get Details !</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 mt-5 text-center">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top my-3 d-lg-none" src="images/register-8bit.png" alt="Cool 'Register' Image !">
+              <img class="card-img-top my-3 d-none d-lg-block" src="images/register.png" alt="Cool 'Register' Image !">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalRegister">Register Now !</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center my-5">
+          <a href="index.html"><button id="gooptions" type="button" class="btn btn-secondary">Go Home</button></a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal1-Body-->
+    <div class="modal fade" id="ModalVenue" tabindex="-1" role="dialog" aria-labelledby="ModalVenueTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalVenueTitle">The Venue</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top my-3 d-lg-none" src="images/venue-8bit.png" alt="Cool 'Venue' Image !">
+            <img class="card-img-top my-3 d-none d-lg-block" src="images/venue.png" alt="Cool 'Venue' Image !">
+            <p class="lead">Details will be added soon ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal1-End -->
+    <!-- Modal2-Body-->
+    <div class="modal fade" id="ModalRegister" tabindex="-1" role="dialog" aria-labelledby="ModalRegisterLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalRegisterLabel">Login to Register</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top my-3 d-lg-none" src="images/register-8bit.png" alt="Cool 'Register' Image !">
+            <img class="card-img-top my-3 d-none d-lg-block" src="images/register.png" alt="Cool 'Register' Image !">
+            <form class="mx-2">
+              <div class="form-group">
+                <label for="RNo">Registration Number</label>
+                <input type="number" class="form-control" id="RNo" placeholder="Enter Number">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="PasswordIn">Unique Key</label>
+                <input type="password" class="form-control" id="PasswordIn" placeholder="Enter Key">
+              </div>
+              <a href="thankyou.html"><button type="button" class="btn btn-primary my-3">Submit</button></a>
+              <!--Note to self : replace this form with a fresh one later on-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal2-End -->
+
+  </body>
+
+  <script src="assets/jquery-3.3.1.min.js"></script>
+  <script src="assets/bootstrap.min.js"></script>
+
+</html>
+
+<!-- Designed by Abhishikth Chandaka :) github.com/abhishikthchandaka -->
