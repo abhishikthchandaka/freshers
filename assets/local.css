@@ -7,10 +7,10 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background-position: center;
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  
 }
 
 #loader {
