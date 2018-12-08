@@ -1,2 +1,2 @@
 # freshers
-A temporary site for some quick prototyping. 
+Official Landing Page for B5Fresher's Party 2018-19.
