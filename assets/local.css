@@ -1,16 +1,16 @@
 html, body {
   background: linear-gradient(to bottom right, #33ccff 0%, #ff3399 100%);
 
- height: 100% 
- width: 100%;
+  height: 100%;
+  width: 100%;
 
   margin: 0;
   padding: 0;
 
-  
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+  background-size: cover;
 }
 
 #loader {
