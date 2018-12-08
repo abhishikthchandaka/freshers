@@ -1,0 +1,33 @@
+html{
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, #33ccff 0%, #ff3399 100%);
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btn-primary {
+  background-color: #33ccff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #ff3399;
+}
+
+.btn-secondary {
+  background-color: #ff3399;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-secondary:hover {
+  background-color: #33ccff;
+}
