@@ -16,6 +16,15 @@
       <div class="row justify-content-center">
 
         <div class="col-sm-12 col-md-8 mt-5 text-center">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <h2>- COUNT DOWN -</h2>
+              <h1 id="timer">- - -</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mt-5 text-center">
           <div class="card">
             <div class="card-body">
               <img class="card-img-top my-3 d-lg-none" src="images/venue-sm.png" alt="Cool 'Venue' Image !">
@@ -25,7 +34,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-md-8 mt-5 text-center">
+        <div class="col-sm-12 col-md-6 mt-5 text-center">
           <div class="card">
             <div class="card-body">
               <img class="card-img-top my-3 d-lg-none" src="images/register-sm.png" alt="Cool 'Register' Image !">
@@ -52,10 +61,16 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <img class="card-img-top my-3 d-lg-none" src="images/venue-sm.png" alt="Cool 'Venue' Image !">
-            <img class="card-img-top my-3 d-none d-lg-block" src="images/venue.png" alt="Cool 'Venue' Image !">
-            <p class="lead">Details will be added soon ...</p>
+          <div class="modal-body text-center">
+            <img class="card-img-top my-3" src="images/gateway-logo.png" alt="Cool 'THE GATEWAY HOTEL' Logo !">
+            <img class="card-img-top my-3" src="images/gateway-image.png" alt="Cool 'THE GATEWAY HOTEL' Image !">
+            <h4>THE<strong>GATEWAY</strong> HOTEL<br></h4>
+            <p>Varun Beach, Visakhapatnam</p>
+            <a href="https://gateway.tajhotels.com/en-in/beach-road-visakhapatnam/" target="blank"><button type="button" class="btn btn-primary mb-3">Website</button></a>
+
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15202.801509808978!2d83.316764!3d17.7116088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b82781de177efff!2sThe+Gateway+Hotel+Beach+Road+Visakhapatnam!5e0!3m2!1sen!2sin!4v1544303568843" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -85,7 +100,6 @@
                 <input type="password" class="form-control" id="PasswordIn" placeholder="Enter Key">
               </div>
               <a href="thankyou.html"><button type="button" class="btn btn-primary my-3">Login</button></a>
-              <!--Note to self : replace this form with a fresh one later on-->
             </form>
           </div>
         </div>
@@ -97,6 +111,24 @@
 
   <script src="assets/jquery-3.3.1.min.js"></script>
   <script src="assets/bootstrap.min.js"></script>
+  <script>
+      var countDownDate = new Date("Jan 11, 2019 10:00:00").getTime();
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerHTML = "<strong>"+ days + "D " + hours + "H "
+        + minutes + "M " + seconds + "s </strong>";
+        // If the count down is finished, this text will be displayed
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "IT'S ON NOW !!!";
+        }
+      }, 1000);
+  </script>
 
 </html>
 
