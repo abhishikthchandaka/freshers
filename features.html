@@ -1,25 +1,39 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/localx.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <title>#b5freshers</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/localx.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <title>Features | #b5freshers</title>
+</head>
 
   <body>
 
     <div class="container">
       <div class="row justify-content-center">
-
+        
         <div class="col-sm-12 col-md-8 mt-5 text-center">
           <div class="card bg-transparent">
             <div class="card-body">
               <h2>- COUNT DOWN -</h2>
-              <h1 id="timer">- - -</h1>
+              <h4>IT HAS HAPPENED !</h4>
+              <p class="lead" id="timer">- - -</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-7 mt-5">
+          <div class="card">
+            <div class="card-body text-center d-none d-md-block mt-3">
+              <img src="images/default.jpg" class="img-fluid rounded-circle" height="175" width="175" alt="Me">
+              <p class="lead mt-3"><strong>Hello, Demo User !</strong></p>
+            </div>
+            <div class="card-body text-center d-md-none">
+              <img src="images/default.jpg" class="img-fluid rounded-circle mt-3" width="150" alt="Me">
+              <p class="lead mt-3"><strong>Hello, Demo User !</strong></p>
             </div>
           </div>
         </div>
@@ -44,8 +58,19 @@
           </div>
         </div>
 
-        <div class="col-12 text-center my-5">
-          <a href="index.html"><button type="button" class="btn btn-secondary">Go Home</button></a>
+        <div class="col-sm-12 col-md-8 my-5 text-center">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <a href="index.html"><button type="button" class="btn btn-secondary">Go Home</button></a>
+                </div>
+                <div class="col">
+                  <a href="index.html"><button type="button" class="btn btn-secondary">Log Out</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -79,7 +104,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalRegisterLabel">Login to Register</h5>
+            <h5 class="modal-title" id="ModalRegisterLabel">Register Your Profile</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -88,16 +113,13 @@
             <img class="card-img-top my-3 d-lg-none" src="images/register-sm.png" alt="Cool 'Register' Image !">
             <img class="card-img-top my-3 d-none d-lg-block" src="images/register.png" alt="Cool 'Register' Image !">
             <form class="mx-2">
-              <div class="form-group">
-                <label for="RNo">Registration Number</label>
-                <input type="number" class="form-control" id="RNo" placeholder="Enter Number">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+              <div class="alert alert-danger" role="alert">
+                The Registrations are now closed !
               </div>
-              <div class="form-group">
-                <label for="PasswordIn">Unique Key</label>
-                <input type="password" class="form-control" id="PasswordIn" placeholder="Enter Key">
+              <div class="alert alert-primary" role="alert">
+                Click below to view your profile and the choice(s) made.
               </div>
-              <a href="thankyou.html"><button type="button" class="btn btn-primary my-3">Login</button></a>
+              <a href="profile.html"><button type="button" class="btn btn-primary my-3">Click me !</button></a>
             </form>
           </div>
         </div>
@@ -123,7 +145,7 @@
         // If the count down is finished, this text will be displayed
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("timer").innerHTML = "IT'S ON NOW !!!";
+          document.getElementById("timer").innerHTML = "THANK YOU FOR YOUR SUPPORT :)";
         }
       }, 1000);
   </script>
